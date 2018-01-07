@@ -9,6 +9,10 @@ $("a").click(function (e) {
     e.preventDefault();
 });
 
+$(".btn").mouseup(function(){
+    $(this).blur();
+})
+
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
