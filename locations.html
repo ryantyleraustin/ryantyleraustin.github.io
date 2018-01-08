@@ -43,7 +43,13 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c2551d">
     <meta name="theme-color" content="#c2551d">
-
+    
+    <script type="text/javascript">
+    function unhideDiv(divID) {
+        document.getElementById(divID).style.display = "all";
+    }
+    </script>
+        
 </head>
   
 <body>
@@ -55,7 +61,7 @@
             <div class="col-lg-5 col-sm-6">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Locations</h2>
-                    <li onclick="hideUnhide("location1","unhide")">Location 1</li>
+                    <a onclick="unhideDiv("location1")">Location 1</a>
                     <li>Location 2</li>
                     <li>Location 3</li>
                 <br>
