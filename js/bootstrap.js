@@ -4,15 +4,6 @@
  * Licensed under the MIT license
  */
 
-function hideUnhide(div_ID, visibility_param) {
-    var x = document.getElementById(div_ID);
-    if (visibility_param === "unhide") {
-        x.style.display = "all";
-    } else {
-        x.style.display = "none";
-    }
-}
-
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
