@@ -50,7 +50,6 @@
         var childDivs = document.getElementById('locations').getElementsByTagName('div');
         for( i=0; i< childDivs.length; i++ ) {
             var childDiv = childDivs[i];
-            document.write(childDiv.id);
             if (childDiv.id === w) {
                 childDiv.style.display = "block";
             } else {
@@ -89,9 +88,9 @@
                 <h2 class="section-heading">Locations</h2>
                     <li> <a onclick="unhideLocation('location1')" onmouseover="" style="cursor: pointer;">123 Red Street – New York, NY</a> </li>
                     <br>
-                    <li> <a onclick="unhideLocation2()" onmouseover="" style="cursor: pointer;">456 Orange Road – Orlando, FL</a> </li>
+                    <li> <a onclick="unhideLocation('location2')" onmouseover="" style="cursor: pointer;">456 Orange Road – Orlando, FL</a> </li>
                     <br>
-                    <li> <a onclick="unhideLocation3()" onmouseover="" style="cursor: pointer;">789 Yellow Avenue – Los Angeles, CA</a> </li>
+                    <li> <a onclick="unhideLocation('location3')" onmouseover="" style="cursor: pointer;">789 Yellow Avenue – Los Angeles, CA</a> </li>
                 <br>
                 <br>
                 <br>
