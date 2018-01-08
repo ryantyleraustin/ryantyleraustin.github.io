@@ -45,6 +45,19 @@
     <meta name="theme-color" content="#c2551d">
     
     <script type="text/javascript">
+        
+    function unhideLocation(w) {
+        var childDivs = document.getElementById('locations').getElementsByTagName('div');
+        for( i=0; i< childDivs.length; i++ ) {
+            var childDiv = childDivs[i];
+            if childDiv.constructor.name === w {
+                childDiv.style.display = "block";
+            } else {
+                childDiv.style.display = "none";
+            }
+        }
+    }
+    
     function unhideLocation1() {
         document.getElementById("location1").style.display = "block";
         document.getElementById("location2").style.display = "none";
@@ -73,7 +86,7 @@
             <div class="col-lg-5 col-sm-6">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Locations</h2>
-                    <li> <a onclick="unhideLocation1()" onmouseover="" style="cursor: pointer;">123 Red Street – New York, NY</a> </li>
+                    <li> <a onclick="unhideLocation('location1')" onmouseover="" style="cursor: pointer;">123 Red Street – New York, NY</a> </li>
                     <br>
                     <li> <a onclick="unhideLocation2()" onmouseover="" style="cursor: pointer;">456 Orange Road – Orlando, FL</a> </li>
                     <br>
@@ -87,7 +100,7 @@
                 <br>
                 <br>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5" id="locations">
                 <div style="display:block" id="location1">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30585241254!2d-74.2598595831673!3d40.69714943358793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY!5e0!3m2!1sen!2sus!4v1515381423944" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
