@@ -45,8 +45,20 @@
     <meta name="theme-color" content="#c2551d">
     
     <script type="text/javascript">
-    function unhideDiv(w) {
-        document.getElementById(w).style.display = "all";
+    function unhideLocation1() {
+        document.getElementById("location1").style.display = "all";
+        document.getElementById("location2").style.display = "none";
+        document.getElementById("location3").style.display = "none";
+    }
+    function unhideLocation2() {
+        document.getElementById("location1").style.display = "none";
+        document.getElementById("location2").style.display = "all";
+        document.getElementById("location3").style.display = "none";
+    }
+    function unhideLocation3() {
+        document.getElementById("location1").style.display = "none";
+        document.getElementById("location2").style.display = "none";
+        document.getElementById("location3").style.display = "all";
     }
     </script>
         
@@ -61,9 +73,9 @@
             <div class="col-lg-5 col-sm-6">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Locations</h2>
-                    <a onclick="unhideDiv("location1")">Location 1</a>
-                    <li>Location 2</li>
-                    <li>Location 3</li>
+                    <li> <a onclick="unhideLocation1()">Location 1</a> </li>
+                    <li> <a onclick="unhideLocation2()">Location 2</a> </li>
+                    <li> <a onclick="unhideLocation3()">Location 3</a> </li>
                 <br>
                 <a href="http://www.716quesadillas.com/">Return to home page</a>
             </div>
