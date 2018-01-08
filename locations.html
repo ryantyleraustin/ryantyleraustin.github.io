@@ -50,8 +50,8 @@
         var childDivs = document.getElementById('locations').getElementsByTagName('div');
         for( i=0; i< childDivs.length; i++ ) {
             var childDiv = childDivs[i];
-            document.write(childDiv.name);
-            if (childDiv.name === w) {
+            document.write(childDiv.id);
+            if (childDiv.id === w) {
                 childDiv.style.display = "block";
             } else {
                 childDiv.style.display = "none";
