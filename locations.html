@@ -61,11 +61,11 @@
             if (childDiv2.id === w) {
                 childDiv2.type = "disc";
                 childDiv2.style.fontWeight = "bold";
-                document.getElementById(childDiv2).getElementsByTagName('a').style.color = "black";
+                childDiv2.children[0].style.color = "black";
             } else {
                 childDiv2.type = "circle";
                 childDiv2.style.fontWeight = "normal";
-                document.getElementById(childDiv2).getElementsByTagName('a').style.color = "";
+                childDiv2.children[0].style.color = "";
             }
         }
     }
