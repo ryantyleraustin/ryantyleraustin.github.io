@@ -55,6 +55,15 @@
                 childDiv.style.display = "none";
             }
         }
+        var childDivs2 = document.getElementById('addresses').getElementsByTagName('li');
+        for( i=0; i< childDivs2.length; i++ ) {
+            var childDiv2 = childDivs2[i];
+            if (childDiv2.id === w) {
+                childDiv2.style.color = "blue";
+            } else {
+                childDiv2.style.color = "black";
+            }
+        }
     }
     </script>
         
@@ -69,11 +78,13 @@
             <div class="col-lg-5 col-sm-6">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Locations</h2>
-                    <li> <a onclick="selectLocation('1')" onmouseover="" style="cursor: pointer;">123 Red Street – New York, NY</a> </li>
-                    <br>
-                    <li> <a onclick="selectLocation('2')" onmouseover="" style="cursor: pointer;">456 Orange Road – Orlando, FL</a> </li>
-                    <br>
-                    <li> <a onclick="selectLocation('3')" onmouseover="" style="cursor: pointer;">789 Yellow Avenue – Los Angeles, CA</a> </li>
+                    <div id="addresses">
+                        <li id="1"> <a onclick="selectLocation('1')" onmouseover="" style="cursor: pointer;">123 Red Street – New York, NY</a> </li>
+                        <br>
+                        <li id="2"> <a onclick="selectLocation('2')" onmouseover="" style="cursor: pointer;">456 Orange Road – Orlando, FL</a> </li>
+                        <br>
+                        <li id="3"> <a onclick="selectLocation('3')" onmouseover="" style="cursor: pointer;">789 Yellow Avenue – Los Angeles, CA</a> </li>
+                    </div>
                 <br>
                 <br>
                 <br>
