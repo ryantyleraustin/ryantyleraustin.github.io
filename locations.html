@@ -55,7 +55,7 @@
                 childDiv.style.display = "none";
             }
         }
-        var childDivs2 = document.getElementById('addresses').getElementsByTagName('li');
+        var childDivs2 = document.getElementById('addresses').getElementsByTagName('a');
         for( i=0; i< childDivs2.length; i++ ) {
             var childDiv2 = childDivs2[i];
             if (childDiv2.id === w) {
@@ -79,11 +79,11 @@
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Locations</h2>
                     <div id="addresses">
-                        <li id="1"> <a onclick="selectLocation('1')" onmouseover="" style="cursor: pointer;">123 Red Street – New York, NY</a> </li>
+                        <li> <a id="1" onclick="selectLocation('1')" onmouseover="" style="cursor: pointer;">123 Red Street – New York, NY</a> </li>
                         <br>
-                        <li id="2"> <a onclick="selectLocation('2')" onmouseover="" style="cursor: pointer;">456 Orange Road – Orlando, FL</a> </li>
+                        <li> <a id="2" onclick="selectLocation('2')" onmouseover="" style="cursor: pointer;">456 Orange Road – Orlando, FL</a> </li>
                         <br>
-                        <li id="3"> <a onclick="selectLocation('3')" onmouseover="" style="cursor: pointer;">789 Yellow Avenue – Los Angeles, CA</a> </li>
+                        <li> <a id="3" onclick="selectLocation('3')" onmouseover="" style="cursor: pointer;">789 Yellow Avenue – Los Angeles, CA</a> </li>
                     </div>
                 <br>
                 <br>
