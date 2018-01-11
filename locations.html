@@ -80,7 +80,7 @@
             <div class="col-lg-5 col-sm-6">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Locations</h2>
-                    <div id="addresses">
+                    <div id="addresses" class="hidden-xs">
                         <li id="1" type="disc"> <a onclick="selectLocation('1')" style="cursor: pointer; font-weight: bold; color: black;">123 Red Street – New York, NY</a> </li>
                         <br>
                         <li id="2" type="circle"> <a onclick="selectLocation('2')" style="cursor: pointer; font-weight: normal; color:;">456 Orange Road – Orlando, FL</a> </li>
@@ -88,6 +88,15 @@
                         <li id="3" type="circle"> <a onclick="selectLocation('3')" style="cursor: pointer; font-weight: normal; color:;">789 Yellow Avenue – Los Angeles, CA</a> </li>
                         <br>
                         <li id="4" type="circle"> <a onclick="selectLocation('4')" style="cursor: pointer; font-weight: normal; color:;">1011 Green Boulevard – Las Vegas, NV</a> </li>
+                    </div>
+                    <div id="addresses_mobile" class="visible-xs">
+                        <li type="disc"> <a href="https://goo.gl/maps/NdehkfwGQLx">123 Red Street – New York, NY</a> </li>
+                        <br>
+                        <li type="disc"> <a href="https://goo.gl/maps/tcvjJuqAYEC2">456 Orange Road – Orlando, FL</a> </li>
+                        <br>
+                        <li type="disc"> <a href="https://goo.gl/maps/ueD2WatgDaF2">789 Yellow Avenue – Los Angeles, CA</a> </li>
+                        <br>
+                        <li type="disc"> <a href="https://goo.gl/maps/2rJWvgNR2T92">1011 Green Boulevard – Las Vegas, NV</a> </li>
                     </div>
                 <br>
                 <br>
@@ -112,7 +121,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d412508.1860578918!2d-115.45518692834202!3d36.124673764267634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80beb782a4f57dd1%3A0x3accd5e6d5b379a3!2sLas+Vegas%2C+NV!5e0!3m2!1sen!2sus!4v1515478894166" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="visible-xs col-lg-5 col-lg-offset-2 col-sm-6">
+            <div class="visible-xs col-lg-5 col-lg-offset-2 col-sm-6" id="maps_mobile">
                 <img style="max-width:250px" class="img-responsive" src="img/location_icon.svg" alt="">
             </div>
         </div>
