@@ -147,9 +147,11 @@
     
 <!-- jQuery -->
 <script src="js/jquery.js">
-$('mylink').on('click', function(event) {
-    event.preventDefault(); // To prevent following the link (optional)
-    alert("Hello! I am an alert box!!");
+$(document).ready(function() {
+    $('#mylink a').on('click', function(event) {
+        event.preventDefault(); // To prevent following the link (optional)
+        alert("Hello! I am an alert box!!");
+    });
 });
 </script>
 
