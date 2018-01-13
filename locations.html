@@ -46,6 +46,31 @@
     <meta name="theme-color" content="#c2551d">
     
     <script type="text/javascript">
+    // Wait for the page to load first
+    window.onload = function() {
+
+        //Get a reference to the link on the page
+        // with an id of "mylink"
+        var a = document.getElementById("mylink");
+
+        //Set code to run when the link is clicked
+        // by assigning a function to "onclick"
+        a.onclick = function() {
+            // Your code here...
+
+	    alert("Hello! I am an alert box!!");
+		
+            //If you don't want the link to actually 
+            // redirect the browser to another page,
+            // "google.com" in our example here, then
+            // return false at the end of this block.
+            // Note that this also prevents event bubbling,
+            // which is probably what we want here, but won't 
+            // always be the case.
+            return false;
+        }
+    }
+	    
     function selectLocation(w) {
         var childDivs = document.getElementById('maps').getElementsByTagName('div');
         for( i=0; i< childDivs.length; i++ ) {
@@ -82,6 +107,8 @@
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Locations</h2>
 	            <div id="addresses" class="hidden-xs">
+			<li type="disc"> <a id="mylink" href="www.716quesadillas.com" style="font-weight: bold; color: black;">Test Link</a> </li>
+			<br>   
                         <li id="1" type="disc"> <a onclick="selectLocation('1')" style="cursor: pointer; font-weight: bold; color: black;">123 Red Street – New York, NY</a> </li>
                         <br>
                         <li id="2" type="circle"> <a onclick="selectLocation('2')" style="cursor: pointer; font-weight: normal; color:;">456 Orange Road – Orlando, FL</a> </li>
